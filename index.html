@@ -11,7 +11,7 @@
     <title>In Details | Esthétique Automobile</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="home">
         <header>
             <div id="logo-container">
               <a id="logo" href="index.html"><img src="./images/in-details-logo.jpg" alt="In Details Icon"></a>
@@ -25,30 +25,224 @@
                     <h3>TÉLÉPHONE</h3>
                     <p>0474/19.44.62</p>
                 </div>
+                <div id="hours">
+                  <h3>HORAIRE</h3>
+                  <p>Lun. - Ven. : 9h - 18h</p>
+              </div>
             </div>
             <div id="phare"><img src="./images/phare.png" alt="Headlight Icon"></div>
         </header>
-
+        
+        <!-- NAVBAR -->
         <nav id="navbar">
             <ul>
-              <li><a href="#accueil">Accueil</a></li>
-              <li><a href="#lavage">Lavage</a></li>
-              <li><a href="#detailing">Detailing</a></li>
+              <li><a href="#home">Accueil</a></li>
+              <li><a href="#packs">Packs</a></li>
+              <li><a href="#details">Details</a></li>
+              <li><a href="#prices">Tarifs</a>
+                <!-- <ul>
+                  <li><a href="#">Lavage Complet</a></li>
+                  <li><a href="#">Soft Care</a></li>
+                  <li><a href="#">Lavage Simple</a></li>
+                  <li><a href="#">Lavage Moteur</a></li>
+                </ul> -->
+              </li>
               <li><a href="#realisations">Réalisations</a></li>
-              <li><a href="#tarifs">Tarifs</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
+        <!-- CONTENT -->
         <div class="content">
+          <!-- VIDEO -->
           <div id="video-container">
-            <video width="100%" height="100%" controls muted autoplay>
-              <source src="/videos/video-accueil-webm.webm" type="video/webm">
-              <source src="/videos/video-accueil.mp4" type="video/mp4">
+            <video width="100%" height="100%" muted autoplay loop>
+              <!-- <source src="./videos/video-accueil-webm.webm" type="video/webm"> -->
+              <source src="./videos/video-accueil.mp4" type="video/mp4">
             </video>
-
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OJdhYPhcIdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
           </div>
+
+          <!-- PACKS -->
+          <div id="packs">
+
+            <!-- LAVAGE COMPLET -->
+            <div id="complet">
+              <div class="pack-img">
+                <img src="./images/services/cuir.jpg" alt="Avatar">
+              </div>
+              
+              <div class="pack-txt">
+                <h1 class="pack-title">Lavage Complet</h1>
+                <p class="pack-citation">"Votre voiture comme au premier jour"</p>
+              </div>
+              
+              
+              <div class="services-preview">
+                  <div class="services-list">
+                      <p>Lavage extérieur</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>Lavage intérieur complet</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>4-5 heures</p>
+                  </div>
+              </div>
+  
+              <div class="learn-more">
+                <button type="submit" class="more-btn" onclick="location.href='#details';">Voir plus</button>
+              </div>
+            </div>
+
+            <!-- SOFT CARE -->
+            <div id="soft-care">
+              <div class="pack-img">
+                <img src="./images/services/BLUE/interior5.jpg" alt="Avatar">
+              </div>
+              
+              <div class="pack-txt">
+                <h1 class="pack-title">Soft Care</h1>
+                <p class="pack-citation">"Rafraîchir sa voiture, à moindre coût"</p>
+              </div>
+              
+              
+              <div class="services-preview">
+                  <div class="services-list">
+                      <p>Lavage extérieur</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>Lavage intérieur</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>2 heures</p>
+                  </div>
+              </div>
+  
+              <div class="learn-more">
+                <button type="submit" class="more-btn" onclick="">Voir plus</button>
+              </div>
+            </div>
+
+            <!-- LAVAGE SIMPLE -->
+            <div id="simple">
+              <div class="pack-img">
+                <img src="./images/services/BLUE/wash.jpg" alt="Avatar">
+              </div>
+              
+              <div class="pack-txt">
+                <h1 class="pack-title">Lavage Simple</h1>
+                <p class="pack-citation">"Pour un lavage rapide"</p>
+              </div>
+              
+              
+              <div class="services-preview">
+                  <div class="services-list">
+                      <p>Lavage extérieur ou intérieur</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>Dépoussiérage intégral</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>1 heure</p>
+                  </div>
+              </div>
+  
+              <div class="learn-more">
+                <button type="submit" class="more-btn" onclick="">Voir plus</button>
+              </div>
+            </div>
+
+            <!-- LAVAGE MOTEUR -->
+            <div id="moteur">
+              <div class="pack-img">
+                <img src="./images/services/BLUE/motor.jpg" alt="Avatar">
+              </div>
+              
+              <div class="pack-txt">
+                <h1 class="pack-title">Lavage Moteur</h1>
+                <p class="pack-citation">"Pour rajeunir son moteur"</p>
+              </div>
+              
+              
+              <div class="services-preview">
+                  <div class="services-list">
+                      <p>Lavage moteur à la vapeur</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>Traitement des plastiques</p>
+                  </div>
+
+                  <div class="services-list">
+                      <p>30 minutes</p>
+                  </div>
+              </div>
+  
+              <div class="learn-more">
+                <button type="submit" class="more-btn" onclick="">Voir plus</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- TARIFS -->
+          <div id="details">
+            <div id="pack-complet">
+
+              <div class="exterieur">
+                <h1>Lavage Complet</h1>
+                <h2>Lavage Extérieur</h2>
+                <div class="ext-serv-container">
+
+                  <div class="ext-serv">
+                    <div class="circle" id="circle1">
+                      <span class="blur"></span>
+                      <h3 id="to-top1">Prélavage</h3>
+                      <p class="hide">Le prélavage au lanceur à mousse (Foam Lance) est un premier lavage sans contact qui permet d'éliminer une grande partie du film routier présent sur le véhicule afin de minimiser les risques de dégâts (rayures) lors du lavage.</p>
+                    </div>
+
+                    <div class="circle" id="circle2">
+                      <span class="blur"></span>
+                      <h3 id="to-top2">Hand Wash</h3>
+                      <p class="hide">Le lavage à la main avec un gant doux et soyeux permet un nettoyage en profondeur de la carrosserie sans risque de micro-rayures.</p>
+                    </div>
+                  </div>
+
+                  <div class="ext-serv">
+                    <div class="circle" id="circle5">
+                      <span class="blur"></span>
+                      <h3 id="to-top5">Pression Pneus</h3>
+                      <p class="hide">Vérification de la pression des pneus après chaque lavage.</p>
+                    </div>
+                  </div>
+
+                  <div class="ext-serv">
+                    <div class="circle" id="circle3">
+                      <span class="blur"></span>
+                      <h3 id="to-top3">Lavage Jantes</h3>
+                      <p class="hide">Lavage des jantes en profondeur avec des brosses conçues pour éviter toutes rayures, avec des produits adaptés permettant de décrasser efficacement la jante et enlever tous résidus de poussière de freins, particules de fer et film routier.</p>
+                    </div>
+
+                    <div class="circle" id="circle4">
+                      <span class="blur"></span>
+                      <h3 id="to-top4">Brillant Pneus</h3>
+                      <p class="hide">Application d'un nourrissant pneus, redonnant de l'éclat à ces derniers comme s'ils étaient neufs.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
         </div>
 
     </div>
